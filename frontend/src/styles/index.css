@@ -1,0 +1,26 @@
+@import "leaflet/dist/leaflet.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-mist text-ink antialiased;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.panel {
+  @apply rounded-3xl border border-ink/10 bg-white/90 shadow-sm;
+}
+
+.button-primary {
+  @apply rounded-full bg-pine px-5 py-3 text-sm font-semibold text-white transition hover:bg-pine/90;
+}
+
+.button-secondary {
+  @apply rounded-full border border-ink/15 px-5 py-3 text-sm font-semibold text-ink transition hover:bg-ink/5;
+}
+
+.input {
+  @apply w-full rounded-2xl border border-ink/15 bg-white px-4 py-3 text-sm outline-none focus:border-pine;
+}
