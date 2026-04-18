@@ -31,6 +31,7 @@ jobs:
         with:
           python-version: "3.11"
       - run: echo "POSTGRES_URL=postgresql+psycopg2://postgres:postgres@localhost:5432/kirana" >> $GITHUB_ENV
+      - run: echo "PYTHONPATH=${{ github.workspace }}/backend" >> $GITHUB_ENV
       - run: pip install -r requirements.txt
       - run: pytest app/tests
 
